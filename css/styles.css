@@ -1,0 +1,44 @@
+body {
+    background-color:aliceblue;
+    font-family: 'Open Sans', sans-serif;
+    margin: 3rem 5%
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Rokkitt', serif;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+header > img {
+    display: block;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+section {
+    display: flex;
+}
+
+article {
+    flex: 1;
+}
+
+footer {
+    display: flex;
+}
+
+footer {
+    flex: 1;
+}
