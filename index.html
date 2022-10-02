@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Little Lemon</title>
-  <meta name="description" content="A brief description">
+  <meta name="description" content="At Little Lemon we make delicious meals daily">
   <meta name="author" content="Littie Lemon Restaurant">
 
   <!--Social media Open Graph preview -->
@@ -22,7 +22,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
+
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Rokkitt&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="css/styles.css" />
@@ -30,58 +30,81 @@
 
 <body>
 
-  <header>
-    <img src="img/logo2.png" alt="Little_Lemon_logo">
-  </header>
+  <div class="container">
+    <header class="header">
+      <img src="img/logo2.png" alt="Little_Lemon_logo">
+    </header>
+  
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="Booking.html">Booking</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  
+    <main>
+      <section class="promo">
+        <div  class="promo-left">
+          <h1>Today Special<span> Delicious Stake</span></h1>
+          <button>Make a Booking</button>
+        </div>
+        <div  class="promo-right">
+            <img src="img/stake.png" alt="">
+        </div>
+      </section>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="menu.html">Menu</a></li>
-      <li><a href="Book.html">Book</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-  </nav>
+      <section class="posts">
 
-  <main>
-    <section>
-      <article>
-        <h1>
-          Heading
-        </h1>
-        <p>
-          Blog content
-        </p>
-      </article>
+        <div>
+          <h1>Latest Posts</h1>
+        </div>
 
-      <article>
-        <h1>
-          Heading
-        </h1>
-        <p>
-          Blog content
-        </p>
-      </article>
-
-      <article>
-        <h1>
-          Heading
-        </h1>
-        <p>
-          Blog content
-        </p>
-      </article>
-    </section>
-  </main>
-
-  <footer>
-    <div>
-      <img src="img/footer_logo.png" alt="">
-    </div>
-    <div>
-      Copyright Little Lemon
-    </div>
-  </footer>
+        <article class="article">
+          <img src="img/burrito.png" alt="">
+          <h3>Wrap</h3>
+          <h2>
+            A Burrito A Day
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum lectus, pulvinar quis fringilla a, congue sed ipsum. Pellentesque congue ultrices aliquam. Donec mollis urna non mi euismod ultrices. Vivamus.
+          </p>
+        </article>
+  
+        <article class="article">
+          <img src="img/salad.png" alt="">
+          <h3>Salad</h3>
+          <h2>
+            From Farm To Table
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum lectus, pulvinar quis fringilla a, congue sed ipsum. Pellentesque congue ultrices aliquam. Donec mollis urna non mi euismod ultrices. Vivamus.
+          </p>
+        </article>
+  
+        <article class="article">
+            <img src="img/grill.png" alt="">
+            <h3>Crock Pot</h3>
+          <h2>
+            Monday Morning Meal
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum lectus, pulvinar quis fringilla a, congue sed ipsum. Pellentesque congue ultrices aliquam. Donec mollis urna non mi euismod ultrices. Vivamus.
+          </p>
+        </article>
+      </section>
+    </main>
+  
+    <footer class="footer">
+      <div>
+        <img src="img/logo-2.png" alt="">
+      </div>
+      <div>
+        Copyright Little Lemon
+      </div>
+    </footer>
+  </div>
 
   <script src="js/scripts.js" charset="utf-8"></script>
 </body>
