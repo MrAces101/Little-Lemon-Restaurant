@@ -3,13 +3,16 @@ body {
 }
 
 .container {
-  margin: 3% auto;
+  margin: 0 auto;
   max-width: 900px;
-  text-align: center;
 }
 
 h1, h2, h3 {
     font-family: 'Rokkitt', serif;
+}
+
+h1 {
+  margin: 0;
 }
 
 span {
@@ -22,31 +25,46 @@ span {
 .header {
   display: flex;
 
-  border: 1px solid #2196F3;
+  /* border: 1px solid #2196F3; */
 }
 
 .header > img {
   margin: 0 auto;
+  padding: 1rem;
   width: 140px;
 }
 
 /* Navagation */
 
 .nav {
-  border: 1px solid #2196F3;
-
+  /* border: 1px solid #2196F3; */
+  padding: 1rem;
+  text-align: center;
 }
 
 .nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
 .nav li {
-    text-decoration: none;
     display: inline-block;
+    padding: 0 1rem;
 }
 
+.nav li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.nav li a.active {
+  border-bottom: 3px solid red;
+}
+
+.nav li a:hover {
+  border-bottom: 3px solid red;
+}
 
 /* Promo Section*/
 
@@ -54,21 +72,41 @@ span {
   display: flex;
   flex-direction: row;
   border: 1px solid #2196F3;
+  background-image: url("img/bg.png")
+  padding: 2rem ;
 }
 
 .promo h1 {
-  text-align: left;
+  flex: 1;
+  text-align: center;
   font-size: 4rem;
 }
 
 .promo-area {
-  border: 1px solid #2196F3;
   margin: 10px;
   flex: 1;
 }
 
+.promo-area span {
+  color: red;
+}
+
+.button {
+  background-color: red;
+  color: white;
+  padding: .9rem .9rem;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 1rem 0 ;
+  cursor: pointer;
+
+}
+
 .promo-area img {
   width: 100%;
+  border-radius: 1.5rem;
+  box-shadow:
 }
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
@@ -83,7 +121,7 @@ span {
 .posts {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid #2196F3;
+  /* border: 1px solid #2196F3; */
 }
 
 .posts > :first-child {
@@ -108,7 +146,7 @@ span {
   margin: 10px;
   flex: 1;
   text-align: center;
-  border: 1px solid #2196F3;
+  /* border: 1px solid #2196F3; */
   align-content: center;
 }
 
@@ -134,11 +172,12 @@ span {
 
 .footer {
   display: flex;
-  border: 1px solid #2196F3;
+  /* border: 1px solid #2196F3; */
+  padding: 2rem;
 }
 
 .footer-area {
-  border: 1px solid #2196F3;
+  /* border: 1px solid #2196F3; */
   text-align: center;
   margin: 10px;
   padding: 10px;
@@ -148,4 +187,5 @@ span {
 
 .footer-area img {
   width: 130px;
+  padding-top: .6rem;
 }
