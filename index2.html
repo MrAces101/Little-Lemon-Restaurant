@@ -1,7 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Little Lemon</title>
+  <meta name="description" content="At Little Lemon we make delicious meals daily">
+  <meta name="author" content="Littie Lemon Restaurant">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Rokkitt&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles2.css" />
 </head>
@@ -9,40 +20,89 @@
 <body>
 
   <div class="container">
-    <div class="header">Header</div>
-    <div class="nav">Nav</div>
-    <div class="promo">
+    <header class="header">
+      <img src="img/logo2.png" alt="Little_Lemon_logo">
+    </header>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="Booking.html">Booking</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <section class="promo">
       <div class="promo-area">
-        1
+        <h1>Today Special<span> Delicious Stake</span></h1>
+        <button>Make a Booking</button>
       </div>
       <div class="promo-area">
-        2
+        <img src="img/stake.png" alt="">
       </div>
-    </div>
-    <div class="posts">
-      <div class="latest">
-        Latest Posts
-      </div>
-      <div class="post">
-        1
-      </div>
-      <div class="post">
-        2
-      </div>
-      <div class="post">
-        3
-      </div>
-    </div>
-    <div class="footer">
+    </section>
+
+    <main>
+
+      <section class="posts">
+
+        <div class="latest">
+          <h2><span>Latest Posts</span> </h2>
+          <div class="thin-line"></div>
+        </div>
+
+        <article class="article">
+          <img src="img/burrito.png" alt="">
+          <div class="article-content">
+            <h3><span> Wrap </span> </h3>
+            <h2>
+              A Burrito A Day
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum lectus, pulvinar quis fringilla a, congue sed ipsum. Pellentesque congue ultrices aliquam. Donec mollis urna non mi euismod ultrices. Vivamus.
+            </p>
+          </div>
+        </article>
+        <article class="article">
+          <img src="img/salad.png" alt="">
+          <div class="article-content">
+            <h3><span> Salad </span></h3>
+            <h2>
+              From Farm To Table
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum lectus, pulvinar quis fringilla a, congue sed ipsum. Pellentesque congue ultrices aliquam. Donec mollis urna non mi euismod ultrices. Vivamus.
+            </p>
+          </div>
+        </article>
+        <article class="article">
+          <img src="img/grill.png" alt="">
+          <div class="article-content">
+            <h3><span> Crock Pot </span> </h3>
+          <h2>
+            Monday Morning Meal
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum lectus, pulvinar quis fringilla a, congue sed ipsum. Pellentesque congue ultrices aliquam. Donec mollis urna non mi euismod ultrices. Vivamus.
+          </p>
+          </div>
+        </article>
+      </section>
+
+    </main>
+
+    <footer class="footer">
       <div class="footer-area">
-        logo
+        <img src="img/logo-2.png" alt="">
       </div>
       <div class="footer-area">
-        copyright
+      <div><p>Copyright Little Lemon</p></div>
       </div>
-    </div>
+    </footer>
   </div>
 
+  <script src="js/scripts.js" charset="utf-8"></script>
 </body>
 
 </html>

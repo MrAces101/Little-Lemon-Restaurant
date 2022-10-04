@@ -1,53 +1,74 @@
 body {
-
+  background-color: aliceblue;
 }
 
 .container {
-  display: grid;
-  margin: 0 auto;
+  margin: 3% auto;
   max-width: 900px;
-  grid-template-areas: 'header header header'
-                       'nav nav nav'
-                       'promo promo promo'
-                       'posts posts posts'
-                       'footer footer footer';
-  grid-gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
+  text-align: center;
 }
 
-.container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 10px 0;
-  font-size: 30px;
+h1, h2, h3 {
+    font-family: 'Rokkitt', serif;
+}
+
+span {
+  background-color: aliceblue;
+  padding: .2rem .7rem;
 }
 
 /* Header */
 
 .header {
-  grid-area: header;
+  display: flex;
+
+  border: 1px solid #2196F3;
+}
+
+.header > img {
+  margin: 0 auto;
+  width: 140px;
 }
 
 /* Navagation */
 
 .nav {
-  grid-area: nav;
+  border: 1px solid #2196F3;
+
 }
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav li {
+    text-decoration: none;
+    display: inline-block;
+}
+
 
 /* Promo Section*/
 
 .promo {
-  grid-area: promo;
   display: flex;
   flex-direction: row;
+  border: 1px solid #2196F3;
+}
+
+.promo h1 {
+  text-align: left;
+  font-size: 4rem;
 }
 
 .promo-area {
   border: 1px solid #2196F3;
   margin: 10px;
-  padding: 100px;
   flex: 1;
+}
+
+.promo-area img {
+  width: 100%;
 }
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
@@ -60,10 +81,9 @@ body {
 /* Posts Section*/
 
 .posts {
-  grid-area: posts;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  border: 1px solid #2196F3;
 }
 
 .posts > :first-child {
@@ -73,28 +93,59 @@ body {
   border: 1px solid #2196F3;
 }
 
-.post {
-  border: 1px solid #2196F3;
+.posts .latest {
+  text-align: center;
+}
+
+.thin-line {
+  display: block;
+  border: 1px solid black;
+  width: 80%;
+  margin: -2.2rem 0 2rem 10%;
+}
+
+.article {
   margin: 10px;
   flex: 1;
+  text-align: center;
+  border: 1px solid #2196F3;
+  align-content: center;
+}
+
+.article > img {
+  display: block;
+  width: 100%;
+}
+
+.article-content {
+  padding: 0 1rem;
+  margin-top: -1.5rem;
 }
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
 @media (max-width: 750px) {
   .posts {
     flex-direction: column;
+}
+  .footer {
+    flex-direction: column;
   }
 }
 
 .footer {
-  grid-area: footer;
   display: flex;
+  border: 1px solid #2196F3;
 }
 
 .footer-area {
   border: 1px solid #2196F3;
+  text-align: center;
   margin: 10px;
   padding: 10px;
   flex: 1;
 
+}
+
+.footer-area img {
+  width: 130px;
 }
