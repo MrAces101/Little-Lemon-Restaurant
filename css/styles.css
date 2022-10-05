@@ -23,11 +23,11 @@ h1 {
 /* Header */
 .header {
   display: flex;
+  justify-content: center;
   margin-top: 1.5rem;
 }
 
-.header>img {
-  margin: 0 auto;
+.header img {
   width: 10rem;
 }
 
@@ -79,8 +79,11 @@ h1 {
   color: red;
 }
 
+.pone {
+  margin-top: 2.5rem;
+}
+
 .promo-area {
-  margin-top: 1rem;
   overflow: hidden;
   flex: 1;
 }
@@ -97,7 +100,7 @@ h1 {
   display: inline-block;
   border-radius: 2rem;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: .8rem 0;
   cursor: pointer;
 }
@@ -110,7 +113,7 @@ h1 {
 .promo-area img {
   width: 95%;
   text-align: right;
-  border-radius: 5rem;
+  border-radius: 3.5rem;
   border: .8rem solid white;
   transition: 0.5s all ease-in-out;
 }
@@ -160,6 +163,9 @@ h1 {
   box-shadow: 0 .3rem 1.2rem rgb(0 0 0 / 0.1);
 }
 
+.article:hover {
+  box-shadow: 0 .3rem 1.2rem rgb(0 0 0 / 0.3);
+}
 .article>img {
   display: block;
   width: 100%;
@@ -167,10 +173,13 @@ h1 {
 }
 
 .article-content {
-  padding: 0 1rem;
+  padding: 0 1rem .7rem;
   margin-top: -1.5rem;
 }
 
+.article-content a:hover {
+  color: red;
+}
 /* Responsive layout - makes a one column-layout instead of two-column layout */
 @media (max-width: 750px) {
   .promo {
@@ -182,9 +191,14 @@ h1 {
   }
 
   .promo h1 {
+    padding-top: 1rem;
     text-align: center;
   }
-  
+
+  .pone {
+    margin-top: -1.5rem;
+  }
+
   .promo-area {
     text-align: center;
   }
